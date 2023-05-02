@@ -1,1 +1,52 @@
  sudo plutil -replace CFBundleShortVersionString -string "12.6.03" /Applications/Install\ macOS\ Sierra.app/Contents/Info.plist
+ 
+ 
+ There is problem with making a bootable USB stick installer, been like that for 7 months now and Apple seem reluctant to do anything about it.
+
+Usually the error reported is that Volumes/<USBName> is an invalid mount point, your error is different.
+
+
+
+Have you downloaded the most recent version of Sierra available from here,
+
+How to upgrade to macOS Sierra - Apple Support
+
+at Section 4 you download InstallOS.dmg which you open to InstallOS.pkg.
+
+Double-clicking on the InstallOS.pkg will open an installation window, this does not
+
+install Sierra but creates Install macOS Sierra.app in your Applications folder.
+
+
+
+With Install macOS Sierra.app in the Applications folder open Terminal and copy and paste this
+
+
+
+ sudo plutil -replace CFBundleShortVersionString -string "12.6.03" /Applications/Install\ macOS\ Sierra.app/Contents/Info.plist
+
+
+press Return
+
+enter your password
+
+press Return
+
+
+
+now enter the createinstallmedia command for Sierra in Terminal (MyVolume is Apples default name for a USB but you can enter the name of your USB in there.
+
+
+
+sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ macOS\ Sierra.app 
+
+
+press Return and follow the prompts.
+
+
+
+If you still end up with an error can you post a screenshot of your Terminal window.
+
+Posted on May 23, 2020 10:41 PM
+
+ 
