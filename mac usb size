@@ -1,0 +1,17 @@
+/dev/disk3 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *123.0 GB   disk3
+   1:                        EFI ⁨EFI⁩                     209.7 MB   disk3s1
+   2:                  Apple_HFS ⁨Install macOS Sierra⁩    6.0 GB     disk3s2
+   3:                  Apple_HFS ⁨Install macOS High S...⁩ 6.0 GB     disk3s3
+   4:                  Apple_HFS ⁨Install macOS Mojave⁩    7.0 GB     disk3s4
+   5:                  Apple_HFS ⁨Install macOS Catalina⁩  9.0 GB     disk3s5
+   6:                  Apple_HFS ⁨Install macOS Big Sur⁩   14.0 GB    disk3s6
+   7:                  Apple_HFS ⁨Install macOS Monterey⁩  15.0 GB    disk3s7
+   8:                  Apple_HFS ⁨Install macOS Ventura⁩   14.6 GB    disk3s8
+   9:                  Apple_HFS ⁨somakefornewos⁩          30.2 GB    disk3s9
+                    (free space)                         134.8 MB   -
+  10:       Microsoft Basic Data ⁨Data⁩                    19.9 GB    disk3s10
+                    (free space)                         135.2 MB   -
+
+genesis@genesiss-MBP ~ % 
